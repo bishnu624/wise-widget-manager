@@ -1,0 +1,82 @@
+/* ─────────────────────────────────────────────
+   Notification Container (Bottom Left)
+──────────────────────────────────────────── */
+.wisema-notify-wrapper {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999999;
+  pointer-events: none; /* allows clicks through wrapper */
+}
+
+/* ─────────────────────────────────────────────
+   Notification Box
+──────────────────────────────────────────── */
+.wisema-notice {
+  min-width: 260px;
+  max-width: 320px;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #1d2327;
+
+  border-left: 4px solid #46b450;
+
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+
+  /* WP 6.5 style animation */
+  animation: wmSlideInLeft 0.25s ease-out;
+
+  pointer-events: auto; /* allow interaction if needed */
+}
+
+/* ─────────────────────────────────────────────
+   Type Variants
+──────────────────────────────────────────── */
+.wisema-success {
+  border-left-color: #46b450;
+}
+
+.wisema-error {
+  border-left-color: #dc3232;
+}
+
+.wisema-warning {
+  border-left-color: #ffb900;
+}
+
+.wisema-info {
+  border-left-color: #2271b1;
+}
+
+/* ─────────────────────────────────────────────
+   WP-style Slide In Animation
+──────────────────────────────────────────── */
+@keyframes wmSlideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Optional: smooth fade-out (if you later add exit animation)
+──────────────────────────────────────────── */
+.wisema-fade-out {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.2s ease;
+}

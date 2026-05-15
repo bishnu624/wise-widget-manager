@@ -1,0 +1,11 @@
+{
+  "name": "bisnusnr/wise-widget-manager",
+  "description": "Wise Widget Manager Plugin",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "WiseWidgetManager\\": "includes/"
+    }
+  },
+  "require": {}
+}

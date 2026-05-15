@@ -1,0 +1,91 @@
+  /* ─────────────────────────────────────────────
+    Wise Widget Manager SEARCH (RIGHT ALIGNED)
+  ───────────────────────────────────────────── */
+
+  .wisema-search-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* 👈 key change */
+    padding: 10px 24px 0 24px;
+    box-sizing: border-box;
+  }
+
+  /* SEARCH BOX */
+  .wisema-search-box {
+    width: 50%;
+    max-width: 720px;
+    min-width: 260px;
+    position: relative;
+  }
+
+  /* INPUT */
+  .wisema-search-input {
+    width: 100%;
+    padding: 11px 14px 11px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 14px;
+    color: #1a1a1a;
+    outline: none;
+    transition: all 0.18s ease;
+  }
+
+  /* PLACEHOLDER */
+  .wisema-search-input::placeholder {
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  /* FOCUS */
+  .wisema-search-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+  }
+
+  /* ICON */
+  .wisema-search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #9ca3af;
+    pointer-events: none;
+  }
+
+  /* HOVER */
+  .wisema-search-box:hover .nwm-search-input {
+    border-color: #d1d5db;
+  }
+
+  /* ─────────────────────────────────────────────
+    RESPONSIVE
+  ───────────────────────────────────────────── */
+
+  @media (max-width: 1024px) {
+    .wisema-search-box {
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wisema-search-wrapper {
+      justify-content: center; /* center on small screens */
+    }
+
+    .wisema-search-box {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wisema-search-wrapper {
+      justify-content: center;
+      padding: 8px 12px;
+    }
+
+    .wisema-search-box {
+      width: 100%;
+    }
+  }
