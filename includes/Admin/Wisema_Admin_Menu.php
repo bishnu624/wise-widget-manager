@@ -17,7 +17,7 @@ class Wisema_Admin_Menu
   public function wisewima_register_menu()
   {
     $this->plugin_page_setup = apply_filters(
-      'wise_widget_manager/plugin_page_setup',
+      'wisewima/plugin_page_setup',
       array(
         'parent_slug' => 'tools.php',
         'page_title' => esc_html__('WIse Widget Manager', 'wise-widget-manager'),

@@ -15,10 +15,10 @@ class Plugin
   public function init()
   {
 
-    self::WiseWidgetloadAdmin();
+    self::wisema_loadadmin();
   }
 
-  private static function WiseWidgetloadAdmin()
+  private static function wisema_loadadmin()
   {
     $modules = [
       Wisema_Admin_Menu::class,

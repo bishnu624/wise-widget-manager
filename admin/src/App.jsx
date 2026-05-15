@@ -109,8 +109,9 @@ export default function App() {
           <h2>Welcome to Wise Widget Manager</h2>
 
           <p>
-            Wise Widget Manager replaces the fragmented, multi-screen WordPress
-            widget experience with a single, high-performance dashboard
+            Wise Widget Manager brings all WordPress widgets into one simple
+            dashboard, making it easy to enable, disable, or remove widgets
+            without jumping between screens.
           </p>
         </div>
       </div>

@@ -2,16 +2,18 @@
 
 /**
  * Plugin Name:       Wise Widget Manager
- * Description:       Centralized WordPress widget manager for classic themes with drag & drop ordering, live preview, and full sidebar control.
- * Version:           1.0.0
- * Author:            bisnusnr
- * License:           GPL-2.0+
+ * Plugin URI:        https://github.com/bishnu624/wise-widget-manager
+ * Description:       Centralized WordPress widget manager for classic themes with enable/disable controls and sidebar management.
+ * Version:           1.0.1
+ * Author:            Bishnu Sunar
+ * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wise-widget-manager
+ * Domain Path:       /languages
  * Requires at least: 6.0
  * Requires PHP:      7.4
  *
- * @package           wisewidgetmanager
+ * @package           WiseWidgetManager
  */
 
 if (!defined('ABSPATH')) exit;
