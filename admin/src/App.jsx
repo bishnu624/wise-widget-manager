@@ -138,7 +138,10 @@ export default function App() {
           <div className="wisema-widget-left">
             {safeWidgets.length === 0 && (
               <p style={{ color: '#aaa', fontSize: 13 }}>
-                Loading widget areas...
+                {__(
+                  'Loading widget areas... or this theme doesnot have widget area',
+                  'wise-widget-manager'
+                )}
               </p>
             )}
 
