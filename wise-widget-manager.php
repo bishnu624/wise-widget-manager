@@ -24,11 +24,11 @@ defined('WISEWIMA_VERSION') || define('WISEWIMA_VERSION',  '1.0.1');
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/includes/helpers.php';
 
-use WiseWidgetManager\Plugin;
+use WiseWidgetManager\Wisewima_Plugin;
 
 function wisewima_boot()
 {
-  $plugin = new Plugin();
+  $plugin = new Wisewima_Plugin();
   $plugin->init();
 }
 

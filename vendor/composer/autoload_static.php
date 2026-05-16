@@ -22,10 +22,10 @@ class ComposerStaticInit421787a8246148cbfbd18c5d282abc41
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'WiseWidgetManager\\Admin\\Wisema_Admin_Assets' => __DIR__ . '/../..' . '/includes/Admin/Wisema_Admin_Assets.php',
-        'WiseWidgetManager\\Admin\\Wisema_Admin_Menu' => __DIR__ . '/../..' . '/includes/Admin/Wisema_Admin_Menu.php',
-        'WiseWidgetManager\\Admin\\Wisema_Api' => __DIR__ . '/../..' . '/includes/Admin/Wisema_Api.php',
-        'WiseWidgetManager\\Plugin' => __DIR__ . '/../..' . '/includes/Plugin.php',
+        'WiseWidgetManager\\Admin\\Wisewima_Admin' => __DIR__ . '/../..' . '/includes/Admin/Wisewima_Admin.php',
+        'WiseWidgetManager\\Admin\\Wisewima_Api' => __DIR__ . '/../..' . '/includes/Admin/Wisewima_Api.php',
+        'WiseWidgetManager\\Admin\\Wisewima_Assets' => __DIR__ . '/../..' . '/includes/Admin/Wisewima_Assets.php',
+        'WiseWidgetManager\\Wisewima_Plugin' => __DIR__ . '/../..' . '/includes/Wisewima_Plugin.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -4,7 +4,7 @@ namespace WiseWidgetManager\Admin;
 
 if (! defined('ABSPATH')) exit;
 
-class Wisema_Admin_Menu
+class Wisewima_Admin
 {
 
   private $plugin_page_setup = array();

@@ -16,7 +16,7 @@ if (! defined('ABSPATH')) {
   exit;
 }
 
-class Wisema_Api
+class Wisewima_Api
 {
 
   /**

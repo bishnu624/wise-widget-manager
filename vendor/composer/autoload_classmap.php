@@ -7,8 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'WiseWidgetManager\\Admin\\Wisema_Admin_Assets' => $baseDir . '/includes/Admin/Wisema_Admin_Assets.php',
-    'WiseWidgetManager\\Admin\\Wisema_Admin_Menu' => $baseDir . '/includes/Admin/Wisema_Admin_Menu.php',
-    'WiseWidgetManager\\Admin\\Wisema_Api' => $baseDir . '/includes/Admin/Wisema_Api.php',
-    'WiseWidgetManager\\Plugin' => $baseDir . '/includes/Plugin.php',
+    'WiseWidgetManager\\Admin\\Wisewima_Admin' => $baseDir . '/includes/Admin/Wisewima_Admin.php',
+    'WiseWidgetManager\\Admin\\Wisewima_Api' => $baseDir . '/includes/Admin/Wisewima_Api.php',
+    'WiseWidgetManager\\Admin\\Wisewima_Assets' => $baseDir . '/includes/Admin/Wisewima_Assets.php',
+    'WiseWidgetManager\\Wisewima_Plugin' => $baseDir . '/includes/Wisewima_Plugin.php',
 );

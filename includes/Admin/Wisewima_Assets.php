@@ -3,7 +3,7 @@
 namespace WiseWidgetManager\Admin;
 
 if (! defined('ABSPATH')) exit;
-class Wisema_Admin_Assets
+class Wisewima_Assets
 {
   public function init()
   {
