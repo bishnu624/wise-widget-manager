@@ -1,3 +1,4 @@
+import { __ } from '@wordpress/i18n';
 import { useState } from 'react';
 import { useWidgets } from './context';
 
@@ -90,7 +91,11 @@ export default function WidgetCard({ widget, area }) {
             <button
               className="wisema-btn-toggle"
               onClick={() => toggle(widget.id, widget.enabled)}
-              title={widget.enabled ? 'Disable' : 'Enable'}
+              title={
+                widget.enabled
+                  ? __('Disable', 'wise-widget-manager')
+                  : __('Enable', 'wise-widget-manager')
+              }
             >
               {widget.enabled ? <Eye size={18} /> : <EyeOff size={18} />}
             </button>
@@ -104,7 +109,7 @@ export default function WidgetCard({ widget, area }) {
                   remove(widget.id);
                 }
               }}
-              title="Remove widget"
+              title={__('Remove widget', 'wise-widget-manager')}
             >
               <Trash2 size={18} />
             </button>

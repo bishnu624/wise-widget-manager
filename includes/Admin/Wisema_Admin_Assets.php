@@ -13,7 +13,7 @@ class Wisema_Admin_Assets
 
   private function is_wisewima_Page()
   {
-    // phpcs:ignore WordPress.Security.NonceVerification
+
     $page = isset($_GET['page'])
       ? sanitize_key(wp_unslash($_GET['page'])) // phpcs:ignore WordPress.Security.NonceVerification
       : '';
@@ -46,7 +46,7 @@ class Wisema_Admin_Assets
       'wisewima-script',
       WISEWIMA_URL . 'dist/assets/admin.js',
       array('wp-hooks', 'wp-element', 'wp-api-fetch'),
-      1.0,
+      WISEWIMA_VERSION,
       true
     );
 
@@ -54,7 +54,7 @@ class Wisema_Admin_Assets
       'wisewima-style',
       WISEWIMA_URL . 'dist/assets/index.css',
       [],
-      1.0
+      WISEWIMA_VERSION
     );
 
     wp_localize_script('wisewima-script', 'wisewima', [

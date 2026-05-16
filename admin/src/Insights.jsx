@@ -1,3 +1,4 @@
+import { __ } from '@wordpress/i18n';
 import { useEffect, useState } from 'react';
 import './SidebarInsights.css';
 
@@ -75,12 +76,10 @@ export default function SidebarInsights() {
 
   return (
     <div className="wisema-insights-container">
-      <h3>Sidebar Insights</h3>
-
       <div className="wisema-legend">
-        <span>🟢 Low</span>
-        <span>🟡 Medium</span>
-        <span>🔴 High</span>
+        <span>🟢 {__('Low', 'wise-widget-manager')}</span>
+        <span>🟡 {__('Medium', 'wise-widget-manager')}</span>
+        <span>🔴 {__('High', 'wise-widget-manager')}</span>
       </div>
       <div className="wisema-insights-container-wrap">
         {sortedData.map((item) => (

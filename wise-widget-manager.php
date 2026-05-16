@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) exit;
 
 define('WISEWIMA_URL', plugin_dir_url(__FILE__));
 define('WISEWIMA_PATH', plugin_dir_path(__FILE__));
-
+defined('WISEWIMA_VERSION') || define('WISEWIMA_VERSION',  '1.0.1');
 // Load Composer autoload
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/includes/helpers.php';

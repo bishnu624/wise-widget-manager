@@ -1,3 +1,4 @@
+import { __ } from '@wordpress/i18n';
 import Insights from './Insights';
 import SearchBar from './SearchBar';
 
@@ -106,13 +107,11 @@ export default function App() {
         </div>
 
         <div className="wisema--content">
-          <h2>Welcome to Wise Widget Manager</h2>
-
-          <p>
-            Wise Widget Manager brings all WordPress widgets into one simple
-            dashboard, making it easy to enable, disable, or remove widgets
-            without jumping between screens.
-          </p>
+          <h2>{__('Welcome to Wise Widget Manager', 'wise-widget-manager')}</h2>
+          {__(
+            'Wise Widget Manager brings all Classic widgets into one simple dashboard, making it easy to enable, disable, or remove widgets without jumping between screens.',
+            'wise-widget-manager'
+          )}
         </div>
       </div>
 
@@ -121,14 +120,14 @@ export default function App() {
           className={activeTab === 'widget' ? 'active' : ''}
           onClick={() => setActiveTab('widget')}
         >
-          Manage Widgets
+          {__('Manage Widgets', 'wise-widget-manager')}
         </button>
 
         <button
           className={activeTab === 'analyzer' ? 'active' : ''}
           onClick={() => setActiveTab('analyzer')}
         >
-          Insights
+          {__('Insights', 'wise-widget-manager')}
         </button>
       </div>
 
@@ -137,8 +136,6 @@ export default function App() {
       <div className="wisema-widget-manager">
         {activeTab === 'widget' && (
           <div className="wisema-widget-left">
-            <h1>Widget Manager</h1>
-
             {safeWidgets.length === 0 && (
               <p style={{ color: '#aaa', fontSize: 13 }}>
                 Loading widget areas...

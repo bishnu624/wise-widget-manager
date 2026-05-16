@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import apiFetch from '@wordpress/api-fetch';
-
+import { __ } from '@wordpress/i18n';
 const Ctx = createContext();
 export const useWidgets = () => useContext(Ctx);
 
@@ -46,7 +46,8 @@ export const Provider = ({ children }) => {
         data: { id, enabled: !enabled },
       });
 
-      notify('Widget updated successfully');
+      let succMsg = __('Widget updated successfully');
+      notify(succMsg);
     } catch (e) {
       console.error('Toggle failed:', e);
       setWidgets((prev) =>
@@ -72,7 +73,8 @@ export const Provider = ({ children }) => {
       setSelectedWidgetId(null);
     }
     await load();
-    notify('Widget removed successfully');
+    let removedMsg = __('Widget updated successfully');
+    notify(removedMsg);
   };
 
   // ── Notifications ──────────────────────────────────────────
@@ -94,16 +96,12 @@ export const Provider = ({ children }) => {
         widgets,
         toggle,
         remove,
-
         selectedWidgetId,
         setSelectedWidgetId,
-
         activeTab,
         setActiveTab,
         notifications,
         notify,
-        // visibility
-
         searchQuery,
         setSearchQuery,
       }}
