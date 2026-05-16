@@ -29,6 +29,28 @@ Instead of navigating multiple widget screens in the WordPress admin, this plugi
 3. Navigate to Tools → Wise Widget Manager
 4. Start managing your widgets
 
+== Development Setup ==
+
+= Requirements =
+* WordPress 6.0+
+* PHP 7.4+
+* Node.js 18+
+* React 18+
+* webpack 5+
+
+= Clone Repository =
+git clone https://github.com/bishnu624/wise-widget-manager.git
+cd wise-widget-manager/admin
+
+= Install Dependencies =
+npm install
+
+= Build Assets =
+npm run build
+
+= Development Mode =
+npm run start
+
 == Frequently Asked Questions ==
 
 = Does this replace the default WordPress widgets screen? =
