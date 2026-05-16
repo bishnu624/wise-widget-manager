@@ -14,7 +14,6 @@ Wise Widget Manager is a powerful WordPress plugin that provides a centralized d
 
 Instead of navigating multiple widget screens in the WordPress admin, this plugin allows you to control all widgets from a single unified interface.
 
-It is built for performance, usability, and modern WordPress workflows using REST API and an optimized admin UI.
 
 = Key Features =
 * Centralized widget management dashboard
@@ -50,6 +49,5 @@ No. The plugin is lightweight and uses optimized REST API calls.
 = 1.0.1 =
 * Initial release
 * Centralized widget management system
-* Drag & drop widget sorting
 * Widget enable/disable feature
-* Live preview system
+* instant remove widget
