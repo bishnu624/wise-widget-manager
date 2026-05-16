@@ -14,11 +14,8 @@ class Wisema_Admin_Assets
   private function is_wisewima_Page()
   {
 
-    $page = isset($_GET['page'])
-      ? sanitize_key(wp_unslash($_GET['page'])) // phpcs:ignore WordPress.Security.NonceVerification
-      : '';
-
-    return $page === 'wise-widget-dashboard';
+    $screen = get_current_screen();
+    return $screen && $screen->id === 'tools_page_wise-widget-dashboard';
   }
 
   public function wisewima_dequeue_assets($hook)
