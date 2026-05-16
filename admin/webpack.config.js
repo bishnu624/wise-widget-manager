@@ -16,15 +16,6 @@ module.exports = (env, argv) => {
       clean: true,
     },
 
-    // Externalize WP packages — fixes the wp.hooks/heartbeat conflict
-    externals: {
-      '@wordpress/hooks': 'wp.hooks',
-      '@wordpress/element': 'wp.element',
-      '@wordpress/api-fetch': 'wp.apiFetch',
-      react: 'React',
-      'react-dom': 'ReactDOM',
-    },
-
     resolve: {
       extensions: ['.js', '.jsx'],
     },

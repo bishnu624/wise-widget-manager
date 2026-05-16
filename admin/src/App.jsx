@@ -21,7 +21,7 @@ function WidgetArea({ area }) {
       <div className="wisema-widget-area-content">
         {widgets.length === 0 ? (
           <p style={{ color: '#aaa', fontSize: 13, padding: '6px 0' }}>
-            No active widgets
+            {__(' No active widgets', 'wise-widget-manager')}
           </p>
         ) : (
           widgets.map((w) => <WidgetCard key={w.id} widget={w} area={area} />)
