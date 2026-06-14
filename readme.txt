@@ -2,7 +2,7 @@
 Contributors: bisnusnr
 Tags: widgets, sidebar, classic widgets, dashboard
 Requires at least: 6.0
-Tested up to: 6.9
+Tested up to: 7.0
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -29,14 +29,6 @@ Instead of navigating multiple widget screens in the WordPress admin, this plugi
 3. Navigate to Tools → Wise Widget Manager
 4. Start managing your widgets
 
-== Development Setup ==
-
-= Requirements =
-* WordPress 6.0+
-* PHP 7.4+
-* Node.js 18+
-* React 18+
-* webpack 5+
 
 = Clone Repository =
 git clone https://github.com/bishnu624/wise-widget-manager.git
